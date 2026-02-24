@@ -1,0 +1,19 @@
+# requirements.txt
+# This project uses ONLY Python standard library modules:
+#   - sqlite3 (database)
+#   - http.server (REST API)
+#   - json (serialization)
+#   - logging (structured logs)
+#   - signal (graceful shutdown)
+#   - math (sensor calculations)
+#   - random (noise generation)
+#   - threading (API background thread)
+#
+# NO external dependencies required!
+# This means: no pip install needed, no multi-stage build needed,
+# and the image stays as small as possible.
+#
+# If you later add external packages (e.g., paho-mqtt for MQTT support),
+# add them here with pinned versions:
+# paho-mqtt==1.6.1
+# cryptography==41.0.7
