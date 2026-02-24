@@ -112,15 +112,24 @@ The simulator produces operationally realistic patterns:
 | HX-E100  | outlet_temperature | Temperature | °C      |
 
 Quick Start
+
 Build the Image
-https://github.com/ejimaone/industrial-separation-simulator.git
-cd separation-simulator
+
+git clone https://github.com/ejimaone/industrial-separation-simulator.git
+
+cd industrial-separation-simulator
+
 docker build -t separation-simulator .
+
 docker run -p 8080:8080 -v $(pwd)/data:/data separation-simulator
+
 curl http://localhost:8080/health
+
 curl http://localhost:8080/readings
+
 Host Directory → /data (mounted volume)
 → sensors.db (SQLite WAL)
+
 
 | Variable         | Default | Description            |
 | ---------------- | ------- | ---------------------- |
